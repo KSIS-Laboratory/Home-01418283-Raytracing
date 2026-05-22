@@ -4,8 +4,9 @@ A simple GitHub Pages website for course 01418283: Ray Tracing in Entertainment 
 
 ## Features
 
-✨ **15-Week Schedule** - Complete course schedule with weekly topics
-📥 **Slide Downloads** - Direct download links for all course slides
+✨ **Semester-Based Schedules** - Manage 15-week course schedules for each semester independently
+📋 **Lecture & Assignment Tracking** - Track lectures and assignments for each week
+📥 **Slide Downloads** - Direct download links for all course materials
 🕐 **Automatic Update Tracking** - Displays when slides were last updated
 🖼️ **Past Works Gallery** - Showcase student rendered images by semester
 📱 **Responsive Design** - Works on desktop, tablet, and mobile devices
@@ -94,14 +95,53 @@ jobs:
 Edit `data.json` to:
 
 - **Change course details** - Modify `courseName` and `courseCode`
-- **Update the material** - Edit the `material` array with week numbers, topics, and slide filenames
+- **Update material** - Edit the `material` array with week numbers, topics, and slide filenames
+- **Add schedules** - Edit the `schedules` array to define 15-week schedule for each semester
 - **Add past works** - Add student renderings to the `pastWorks` array
 
-### Example: Adding a New Semester
+### Example: Adding a New Semester Schedule
+
+To add a new semester (e.g., "2026-1st"), add it to the `schedules` array in `data.json`:
 
 ```json
 {
-  "semester": "Spring 2026",
+  "semester": "2026-1st",
+  "year": 2026,
+  "weeks": [
+    {
+      "week": 1,
+      "topic": "Introduction to Ray Tracing",
+      "lectureFile": "slides/2026-1st/Week01.pdf",
+      "assignmentFile": "assignments/2026-1st/Week01_Assignment.pdf"
+    },
+    {
+      "week": 2,
+      "topic": "Ray-Surface Interactions",
+      "lectureFile": "slides/2026-1st/Week02.pdf",
+      "assignmentFile": "assignments/2026-1st/Week02_Assignment.pdf"
+    },
+    ...
+    {
+      "week": 15,
+      "topic": "Final Project Presentations",
+      "lectureFile": "slides/2026-1st/Week15.pdf",
+      "assignmentFile": ""
+    }
+  ]
+}
+```
+
+**Tips for schedule management:**
+- Each semester must have exactly 15 weeks
+- Use consistent folder naming: `slides/SEMESTER/` and `assignments/SEMESTER/`
+- Leave `assignmentFile` empty (`""`) if no assignment for that week (e.g., week 15)
+- The website will automatically create tabs for each semester
+
+### Example: Adding a New Past Works Semester
+
+```json
+{
+  "semester": "2026-1st",
   "year": 2026,
   "works": [
     {

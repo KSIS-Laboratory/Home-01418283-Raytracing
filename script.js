@@ -100,6 +100,90 @@ function generatePastWorks(data) {
     }
 }
 
+// Generate schedule
+function generateSchedule(data) {
+    const scheduleTabs = document.getElementById('scheduleTabs');
+    
+    scheduleTabs.innerHTML = '';
+    
+    // Create tabs for each semester
+    data.schedules.forEach((semester, index) => {
+        const tab = document.createElement('button');
+        tab.className = `semester-tab ${index === 0 ? 'active' : ''}`;
+        tab.textContent = semester.semester;
+        tab.onclick = () => displayScheduleForSemester(semester, data.schedules);
+        scheduleTabs.appendChild(tab);
+    });
+
+    // Display first semester by default
+    if (data.schedules.length > 0) {
+        displayScheduleForSemester(data.schedules[0], data.schedules);
+    }
+}
+
+// Display schedule for selected semester
+function displayScheduleForSemester(semester, allSemesters) {
+    const table = document.getElementById('scheduleTable');
+    table.innerHTML = '';
+
+    // Update active tab
+    const tabs = document.querySelectorAll('.semester-tab');
+    tabs.forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.textContent === semester.semester) {
+            tab.classList.add('active');
+        }
+    });
+
+    // Create table
+    const scheduleTable = document.createElement('table');
+    scheduleTable.className = 'course-schedule';
+
+    // Table header
+    const thead = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    
+    const headers = ['Week', 'Topic', 'Description'];
+    headers.forEach(headerText => {
+        const th = document.createElement('th');
+        th.textContent = headerText;
+        headerRow.appendChild(th);
+    });
+    
+    thead.appendChild(headerRow);
+    scheduleTable.appendChild(thead);
+
+    // Table body
+    const tbody = document.createElement('tbody');
+    
+    semester.weeks.forEach(weekData => {
+        const row = document.createElement('tr');
+        
+        // Week
+        const weekCell = document.createElement('td');
+        weekCell.className = 'week-number';
+        weekCell.textContent = `Week ${weekData.week}`;
+        row.appendChild(weekCell);
+        
+        // Topic
+        const topicCell = document.createElement('td');
+        topicCell.className = 'week-topic';
+        topicCell.textContent = weekData.topic;
+        row.appendChild(topicCell);
+        
+        // Description
+        const descriptionCell = document.createElement('td');
+        descriptionCell.className = 'week-description';
+        descriptionCell.textContent = weekData.description || '-';
+        row.appendChild(descriptionCell);
+        
+        tbody.appendChild(row);
+    });
+    
+    scheduleTable.appendChild(tbody);
+    table.appendChild(scheduleTable);
+}
+
 // Display gallery for selected semester
 function displayGalleryForSemester(semester, allSemesters) {
     const gallery = document.getElementById('workGallery');
@@ -164,6 +248,7 @@ async function init() {
     const data = await loadCourseData();
     if (data) {
         await generateMaterial(data);
+        generateSchedule(data);
         generatePastWorks(data);
     }
 }

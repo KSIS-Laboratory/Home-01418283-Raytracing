@@ -142,6 +142,82 @@ section h2 {
     font-style: italic;
 }
 
+.schedule-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.course-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+.course-schedule thead {
+    background-color: #667eea;
+    color: white;
+}
+
+.course-schedule th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #667eea;
+}
+
+.course-schedule td {
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.course-schedule tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.course-schedule tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.course-schedule .week-number {
+    font-weight: 600;
+    color: #667eea;
+    min-width: 70px;
+}
+
+.course-schedule .week-topic {
+    color: #333;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.course-schedule .week-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.file-link {
+    display: inline-block;
+    background-color: #667eea;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.file-link:hover {
+    background-color: #764ba2;
+}
+
+.file-link:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
 /* Past Works Section */
 .semester-tabs {
     margin-bottom: 2rem;
@@ -253,6 +329,24 @@ footer {
 
     section {
         padding: 1.5rem;
+    }
+
+    /* Responsive table */
+    .course-schedule {
+        font-size: 0.85rem;
+    }
+
+    .course-schedule th,
+    .course-schedule td {
+        padding: 0.6rem 0.5rem;
+    }
+
+    .course-schedule .week-number {
+        min-width: 50px;
+    }
+
+    .course-schedule .week-description {
+        font-size: 0.8rem;
     }
 }
 
