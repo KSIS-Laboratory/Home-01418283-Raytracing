@@ -33,12 +33,12 @@ async function getFileUpdateTime(filePath) {
     }
 }
 
-// Generate schedule from data
-async function generateSchedule(data) {
-    const container = document.getElementById('scheduleContainer');
+// Generate material from data
+async function generateMaterial(data) {
+    const container = document.getElementById('materialContainer');
     container.innerHTML = '';
 
-    for (const week of data.schedule) {
+    for (const week of data.material) {
         const weekCard = document.createElement('div');
         weekCard.className = 'week-card';
 
@@ -163,7 +163,7 @@ function scrollToSection(sectionId) {
 async function init() {
     const data = await loadCourseData();
     if (data) {
-        await generateSchedule(data);
+        await generateMaterial(data);
         generatePastWorks(data);
     }
 }

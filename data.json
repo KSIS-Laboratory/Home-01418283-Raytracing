@@ -1,7 +1,7 @@
 {
   "courseName": "Ray Tracing in Entertainment Industry",
   "courseCode": "01418283",
-  "schedule": [
+  "material": [
     {
       "week": 1,
       "topic": "Introduction to Ray Tracing",
