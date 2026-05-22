@@ -33,6 +33,79 @@ async function getFileUpdateTime(filePath) {
     }
 }
 
+// Generate home section
+async function generateHome(data) {
+    const homeContent = document.getElementById('homeContent');
+    homeContent.innerHTML = '';
+
+    const overview = data.courseOverview;
+
+    // Introduction section
+    const intro = document.createElement('div');
+    intro.className = 'home-section-block';
+    const introTitle = document.createElement('h2');
+    introTitle.textContent = 'What is Ray Tracing?';
+    intro.appendChild(introTitle);
+    const introText = document.createElement('p');
+    introText.textContent = overview.introduction;
+    intro.appendChild(introText);
+    homeContent.appendChild(intro);
+
+    // Course Structure section
+    const structure = document.createElement('div');
+    structure.className = 'home-section-block';
+    const structureTitle = document.createElement('h2');
+    structureTitle.textContent = 'Course Structure';
+    structure.appendChild(structureTitle);
+    const structureText = document.createElement('p');
+    structureText.textContent = overview.courseStructure;
+    structure.appendChild(structureText);
+    homeContent.appendChild(structure);
+
+    // Learning Language section
+    const language = document.createElement('div');
+    language.className = 'home-section-block';
+    const languageTitle = document.createElement('h2');
+    languageTitle.textContent = 'Learning with Python';
+    language.appendChild(languageTitle);
+    const languageText = document.createElement('p');
+    languageText.textContent = overview.learningLanguage;
+    language.appendChild(languageText);
+    homeContent.appendChild(language);
+
+    // Weekly Structure section
+    const weekly = document.createElement('div');
+    weekly.className = 'home-section-block';
+    const weeklyTitle = document.createElement('h2');
+    weeklyTitle.textContent = '15 Weeks of Ray Tracing Curriculum';
+    weekly.appendChild(weeklyTitle);
+    const weeklyText = document.createElement('p');
+    weeklyText.textContent = overview.weeklyStructure;
+    weekly.appendChild(weeklyText);
+    homeContent.appendChild(weekly);
+
+    // Course Outline section
+    const outline = document.createElement('div');
+    outline.className = 'home-section-block';
+    const outlineTitle = document.createElement('h2');
+    outlineTitle.textContent = 'Course Outline';
+    outline.appendChild(outlineTitle);
+    const outlineText = document.createElement('p');
+    outlineText.textContent = overview.courseOutline;
+    outline.appendChild(outlineText);
+    homeContent.appendChild(outline);
+
+
+    // Audience section
+    const audience = document.createElement('div');
+    audience.className = 'home-section-block';
+    const audienceText = document.createElement('p');
+    audienceText.className = 'audience-info';
+    audienceText.textContent = '📚 ' + overview.audience;
+    audience.appendChild(audienceText);
+    homeContent.appendChild(audience);
+}
+
 // Generate material from data
 async function generateMaterial(data) {
     const container = document.getElementById('materialContainer');
@@ -247,6 +320,7 @@ function scrollToSection(sectionId) {
 async function init() {
     const data = await loadCourseData();
     if (data) {
+        await generateHome(data);
         await generateMaterial(data);
         generateSchedule(data);
         generatePastWorks(data);

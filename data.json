@@ -1,6 +1,14 @@
 {
   "courseName": "Ray Tracing in Entertainment Industry",
   "courseCode": "01418283",
+  "courseOverview": {
+    "introduction": "Ray tracing is a powerful rendering technique used in computer graphics to create incredibly realistic images. It simulates the way light travels in the real world, allowing for accurate lighting effects and shadows.",
+    "courseStructure": "This course is designed to take you on a journey from the fundamentals of ray tracing to creating your own stunning images. We will build your knowledge step-by-step, ensuring a solid understanding of the core concepts. This beginner-friendly course offers 13 lectures on the basics and 8 coding practices to help you create impressive images.",
+    "learningLanguage": "The course utilizes Python for all exercises. This choice makes the course accessible to a wider audience, even those with no prior programming experience. Python's clear syntax and extensive libraries make it a perfect language for learning ray tracing.",
+    "weeklyStructure": "The course material is divided into manageable 8-week practices. Each week will introduce new concepts and provide hands-on exercises to solidify your understanding.",
+    "courseOutline": "This course offers a comprehensive ray tracing curriculum, starting with foundational concepts and progressing to intermediate and advanced topics. Each step-by-step lesson builds on the previous one, ensuring a smooth learning curve for beginners and a chance for more experienced learners to deepen their knowledge and expand their skills.",
+    "audience": "The course is provided to undergraduate students of Computer Science program, Faculty of Science, Kasetsart University."
+  },
   "material": [
     {
       "week": 1,
@@ -88,78 +96,78 @@
       "weeks": [
         {
           "week": 1,
-          "topic": "Introduction to Ray Tracing",
-          "description": "Fundamentals of ray tracing, history, and basic concepts in computer graphics."
+          "topic": "Light transport simulation and ray tracing overview",
+          "description": ""
         },
         {
           "week": 2,
-          "topic": "Ray-Surface Interactions",
-          "description": "Understanding how rays interact with surfaces and mathematical foundations."
+          "topic": "Ray tracing components",
+          "description": ""
         },
         {
           "week": 3,
-          "topic": "Reflection and Refraction",
-          "description": "Modeling specular and diffuse reflections, refraction, and Snell's law applications."
+          "topic": "Image formation and rays",
+          "description": ""
         },
         {
           "week": 4,
-          "topic": "Lighting Models",
-          "description": "Phong, Blinn-Phong, and PBR lighting models for realistic shading."
+          "topic": "Basic shapes and intersections",
+          "description": ""
         },
         {
           "week": 5,
-          "topic": "Acceleration Structures",
-          "description": "BVH, KD-trees, and spatial partitioning for efficient ray intersection testing."
+          "topic": "Lighting and shadows",
+          "description": ""
         },
         {
           "week": 6,
-          "topic": "Path Tracing Basics",
-          "description": "Introduction to path tracing algorithm and Monte Carlo integration."
+          "topic": "Geometric optics",
+          "description": ""
         },
         {
           "week": 7,
-          "topic": "Advanced Rendering Techniques",
-          "description": "Caustics, subsurface scattering, and advanced light transport methods."
+          "topic": "Texture and reflection models",
+          "description": ""
         },
         {
           "week": 8,
-          "topic": "Real-time Ray Tracing",
-          "description": "Optimization techniques and strategies for real-time ray tracing applications."
+          "topic": "Reflection models and indirect illumination",
+          "description": ""
         },
         {
           "week": 9,
-          "topic": "GPU-Based Ray Tracing",
-          "description": "CUDA, OptiX, and GPU acceleration for high-performance ray tracing."
+          "topic": "Sampling techniques and reconstruction",
+          "description": ""
         },
         {
           "week": 10,
-          "topic": "Denoising and Post-Processing",
-          "description": "Noise reduction techniques and image processing for ray-traced images."
+          "topic": "Simple visual effects",
+          "description": ""
         },
         {
           "week": 11,
-          "topic": "Special Effects and Motion Blur",
-          "description": "Implementing motion blur, depth of field, and other temporal effects."
+          "topic": "Monte Carlo sampling and Path tracing",
+          "description": ""
         },
         {
           "week": 12,
-          "topic": "Volumetric Rendering",
-          "description": "Rendering fog, smoke, clouds, and participating media."
+          "topic": "Variance reduction",
+          "description": ""
         },
         {
           "week": 13,
-          "topic": "Ray Tracing in Video Games",
-          "description": "Real-world applications in game engines like Unreal and Unity."
+          "topic": "Reflectance measurement",
+          "description": ""
         },
         {
           "week": 14,
-          "topic": "Industry Tools and Techniques",
-          "description": "Overview of production renderers like RenderMan, Arnold, and V-Ray."
+          "topic": "Current topics in ray tracing 1",
+          "description": ""
         },
         {
           "week": 15,
-          "topic": "Final Project Presentations",
-          "description": "Student presentations of their ray tracing projects and rendering results."
+          "topic": "Current topics in ray tracing 2",
+          "description": ""
         }
       ]
     },
@@ -169,78 +177,78 @@
       "weeks": [
         {
           "week": 1,
-          "topic": "Introduction to Ray Tracing",
-          "description": "Fundamentals of ray tracing, history, and basic concepts in computer graphics."
+          "topic": "Light transport simulation and ray tracing overview",
+          "description": ""
         },
         {
           "week": 2,
-          "topic": "Ray-Surface Interactions",
-          "description": "Understanding how rays interact with surfaces and mathematical foundations."
+          "topic": "Ray tracing components",
+          "description": ""
         },
         {
           "week": 3,
-          "topic": "Reflection and Refraction",
-          "description": "Modeling specular and diffuse reflections, refraction, and Snell's law applications."
+          "topic": "Image formation and rays",
+          "description": ""
         },
         {
           "week": 4,
-          "topic": "Lighting Models",
-          "description": "Phong, Blinn-Phong, and PBR lighting models for realistic shading."
+          "topic": "Basic shapes and intersections",
+          "description": ""
         },
         {
           "week": 5,
-          "topic": "Acceleration Structures",
-          "description": "BVH, KD-trees, and spatial partitioning for efficient ray intersection testing."
+          "topic": "Lighting and shadows",
+          "description": ""
         },
         {
           "week": 6,
-          "topic": "Path Tracing Basics",
-          "description": "Introduction to path tracing algorithm and Monte Carlo integration."
+          "topic": "Geometric optics",
+          "description": ""
         },
         {
           "week": 7,
-          "topic": "Advanced Rendering Techniques",
-          "description": "Caustics, subsurface scattering, and advanced light transport methods."
+          "topic": "Texture and reflection models",
+          "description": ""
         },
         {
           "week": 8,
-          "topic": "Real-time Ray Tracing",
-          "description": "Optimization techniques and strategies for real-time ray tracing applications."
+          "topic": "Reflection models and indirect illumination",
+          "description": ""
         },
         {
           "week": 9,
-          "topic": "GPU-Based Ray Tracing",
-          "description": "CUDA, OptiX, and GPU acceleration for high-performance ray tracing."
+          "topic": "Sampling techniques and reconstruction",
+          "description": ""
         },
         {
           "week": 10,
-          "topic": "Denoising and Post-Processing",
-          "description": "Noise reduction techniques and image processing for ray-traced images."
+          "topic": "Simple visual effects",
+          "description": ""
         },
         {
           "week": 11,
-          "topic": "Special Effects and Motion Blur",
-          "description": "Implementing motion blur, depth of field, and other temporal effects."
+          "topic": "Monte Carlo sampling and Path tracing",
+          "description": ""
         },
         {
           "week": 12,
-          "topic": "Volumetric Rendering",
-          "description": "Rendering fog, smoke, clouds, and participating media."
+          "topic": "Variance reduction",
+          "description": ""
         },
         {
           "week": 13,
-          "topic": "Ray Tracing in Video Games",
-          "description": "Real-world applications in game engines like Unreal and Unity."
+          "topic": "Reflectance measurement",
+          "description": ""
         },
         {
           "week": 14,
-          "topic": "Industry Tools and Techniques",
-          "description": "Overview of production renderers like RenderMan, Arnold, and V-Ray."
+          "topic": "Current topics in ray tracing 1",
+          "description": ""
         },
         {
           "week": 15,
-          "topic": "Final Project Presentations",
-          "description": "Student presentations of their ray tracing projects and rendering results."
+          "topic": "Current topics in ray tracing 2",
+          "description": ""
         }
       ]
     },
@@ -250,78 +258,78 @@
       "weeks": [
         {
           "week": 1,
-          "topic": "Introduction to Ray Tracing",
-          "description": "Fundamentals of ray tracing, history, and basic concepts in computer graphics."
+          "topic": "Light transport simulation and ray tracing overview",
+          "description": ""
         },
         {
           "week": 2,
-          "topic": "Ray-Surface Interactions",
-          "description": "Understanding how rays interact with surfaces and mathematical foundations."
+          "topic": "Ray tracing components",
+          "description": ""
         },
         {
           "week": 3,
-          "topic": "Reflection and Refraction",
-          "description": "Modeling specular and diffuse reflections, refraction, and Snell's law applications."
+          "topic": "Image formation and rays",
+          "description": ""
         },
         {
           "week": 4,
-          "topic": "Lighting Models",
-          "description": "Phong, Blinn-Phong, and PBR lighting models for realistic shading."
+          "topic": "Basic shapes and intersections",
+          "description": ""
         },
         {
           "week": 5,
-          "topic": "Acceleration Structures",
-          "description": "BVH, KD-trees, and spatial partitioning for efficient ray intersection testing."
+          "topic": "Lighting and shadows",
+          "description": ""
         },
         {
           "week": 6,
-          "topic": "Path Tracing Basics",
-          "description": "Introduction to path tracing algorithm and Monte Carlo integration."
+          "topic": "Geometric optics",
+          "description": ""
         },
         {
           "week": 7,
-          "topic": "Advanced Rendering Techniques",
-          "description": "Caustics, subsurface scattering, and advanced light transport methods."
+          "topic": "Texture and reflection models",
+          "description": ""
         },
         {
           "week": 8,
-          "topic": "Real-time Ray Tracing",
-          "description": "Optimization techniques and strategies for real-time ray tracing applications."
+          "topic": "Reflection models and indirect illumination",
+          "description": ""
         },
         {
           "week": 9,
-          "topic": "GPU-Based Ray Tracing",
-          "description": "CUDA, OptiX, and GPU acceleration for high-performance ray tracing."
+          "topic": "Sampling techniques and reconstruction",
+          "description": ""
         },
         {
           "week": 10,
-          "topic": "Denoising and Post-Processing",
-          "description": "Noise reduction techniques and image processing for ray-traced images."
+          "topic": "Simple visual effects",
+          "description": ""
         },
         {
           "week": 11,
-          "topic": "Special Effects and Motion Blur",
-          "description": "Implementing motion blur, depth of field, and other temporal effects."
+          "topic": "Monte Carlo sampling and Path tracing",
+          "description": ""
         },
         {
           "week": 12,
-          "topic": "Volumetric Rendering",
-          "description": "Rendering fog, smoke, clouds, and participating media."
+          "topic": "Variance reduction",
+          "description": ""
         },
         {
           "week": 13,
-          "topic": "Ray Tracing in Video Games",
-          "description": "Real-world applications in game engines like Unreal and Unity."
+          "topic": "Reflectance measurement",
+          "description": ""
         },
         {
           "week": 14,
-          "topic": "Industry Tools and Techniques",
-          "description": "Overview of production renderers like RenderMan, Arnold, and V-Ray."
+          "topic": "Current topics in ray tracing 1",
+          "description": ""
         },
         {
           "week": 15,
-          "topic": "Final Project Presentations",
-          "description": "Student presentations of their ray tracing projects and rendering results."
+          "topic": "Current topics in ray tracing 2",
+          "description": ""
         }
       ]
     }
