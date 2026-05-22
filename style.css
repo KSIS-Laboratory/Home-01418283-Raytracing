@@ -83,8 +83,8 @@ section h2 {
     padding-bottom: 0.5rem;
 }
 
-/* Schedule Section */
-.schedule-container {
+/* Material Section */
+.material-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
@@ -246,7 +246,7 @@ footer {
         padding: 0 1rem;
     }
 
-    .schedule-container,
+    .material-container,
     .work-gallery {
         grid-template-columns: 1fr;
     }

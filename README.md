@@ -94,7 +94,7 @@ jobs:
 Edit `data.json` to:
 
 - **Change course details** - Modify `courseName` and `courseCode`
-- **Update the schedule** - Edit the `schedule` array with week numbers, topics, and slide filenames
+- **Update the material** - Edit the `material` array with week numbers, topics, and slide filenames
 - **Add past works** - Add student renderings to the `pastWorks` array
 
 ### Example: Adding a New Semester
