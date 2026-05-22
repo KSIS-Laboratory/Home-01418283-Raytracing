@@ -6,4 +6,4 @@ This course is provided by KSIS Lab (KU Spatial Intelligence System) at Kasetsar
 
 Please checkout the Wiki page.
 
-https://github.com/KUGA-01418283-Raytracing/.github/wiki
+https://github.com/KSIS-Laboratory/Home-01418283-Raytracing/wiki
