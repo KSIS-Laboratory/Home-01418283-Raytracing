@@ -2,7 +2,7 @@
 
 This github provides a raytracing course for beginners.
 
-This course is provided by IVIC Lab (Intelligent Visual Information Computing Laboratory) at Kasetsart University.
+This course is provided by KSIS Lab (KU Spatial Intelligence System) at Kasetsart University.
 
 Please checkout the Wiki page.
 
