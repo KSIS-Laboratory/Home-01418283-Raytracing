@@ -1,0 +1,23 @@
+name: Update File Manifest
+on: [push]
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Update manifest
+        run: python3 scripts/update-manifest.py
+      
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add file-manifest.json
+          git commit -m "Auto-update file manifest" || true
+          git push

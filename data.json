@@ -1,0 +1,165 @@
+{
+  "courseName": "Ray Tracing in Entertainment Industry",
+  "courseCode": "01418283",
+  "schedule": [
+    {
+      "week": 1,
+      "topic": "Introduction to Ray Tracing",
+      "slideFile": "slides/Week01.pdf",
+      "slideFilename": "Week_01_Introduction.pdf"
+    },
+    {
+      "week": 2,
+      "topic": "Ray-Surface Interactions",
+      "slideFile": "slides/Week02.pdf",
+      "slideFilename": "Week_02_Ray_Surface_Interactions.pdf"
+    },
+    {
+      "week": 3,
+      "topic": "Reflection and Refraction",
+      "slideFile": "slides/Week03.pdf",
+      "slideFilename": "Week_03_Reflection_Refraction.pdf"
+    },
+    {
+      "week": 4,
+      "topic": "Lighting Models",
+      "slideFile": "slides/Week04.pdf",
+      "slideFilename": "Week_04_Lighting_Models.pdf"
+    },
+    {
+      "week": 5,
+      "topic": "Acceleration Structures",
+      "slideFile": "slides/Week05.pdf",
+      "slideFilename": "Week_05_Acceleration_Structures.pdf"
+    },
+    {
+      "week": 6,
+      "topic": "Path Tracing Basics",
+      "slideFile": "slides/Week06.pdf",
+      "slideFilename": "Week_06_Path_Tracing.pdf"
+    },
+    {
+      "week": 7,
+      "topic": "Advanced Rendering Techniques",
+      "slideFile": "slides/Week07.pdf",
+      "slideFilename": "Week_07_Advanced_Techniques.pdf"
+    },
+    {
+      "week": 8,
+      "topic": "Real-time Ray Tracing",
+      "slideFile": "slides/Week08.pdf",
+      "slideFilename": "Week_08_Real_time_Ray_Tracing.pdf"
+    },
+    {
+      "week": 9,
+      "topic": "GPU-Based Ray Tracing",
+      "slideFile": "slides/Week09.pdf",
+      "slideFilename": "Week_09_GPU_Ray_Tracing.pdf"
+    },
+    {
+      "week": 10,
+      "topic": "Denoising and Post-Processing",
+      "slideFile": "slides/Week10.pdf",
+      "slideFilename": "Week_10_Denoising.pdf"
+    },
+    {
+      "week": 11,
+      "topic": "Special Effects and Motion Blur",
+      "slideFile": "slides/Week11.pdf",
+      "slideFilename": "Week_11_Special_Effects.pdf"
+    },
+    {
+      "week": 12,
+      "topic": "Volumetric Rendering",
+      "slideFile": "slides/Week12.pdf",
+      "slideFilename": "Week_12_Volumetric_Rendering.pdf"
+    },
+    {
+      "week": 13,
+      "topic": "Ray Tracing in Video Games",
+      "slideFile": "slides/Week13.pdf",
+      "slideFilename": "Week_13_Games.pdf"
+    }
+  ],
+  "pastWorks": [
+    {
+      "semester": "2023-2nd",
+      "year": 2023,
+      "works": [
+        {
+          "studentName": "Student Name unknown",
+          "title": "unknown",
+          "image": "past-works/2023-2nd/66-2-work1.png",
+          "description": "unknown"
+        },
+        {
+          "studentName": "Student Name unknown",
+          "title": "unknown",
+          "image": "past-works/2023-2nd/66-2-work2.png",
+          "description": "unknown"
+        },
+        {
+          "studentName": "Student Name unknown",
+          "title": "unknown",
+          "image": "past-works/2023-2nd/66-2-work3.png",
+          "description": "unknown"
+        }
+      ]
+    },
+    {
+      "semester": "2024-1st",
+      "year": 2024,
+      "works": [
+        {
+          "studentName": "Student Name unknown",
+          "title": "unknown",
+          "image": "past-works/2024-1st/67-1-work1.png",
+          "description": "unknown"
+        },
+        {
+          "studentName": "Student Name unknown",
+          "title": "unknown",
+          "image": "past-works/2024-1st/67-1-work2.png",
+          "description": "unknown"
+        },
+        {
+          "studentName": "Student Name unknown",
+          "title": "unknown",
+          "image": "past-works/2024-1st/67-1-work3.png",
+          "description": "unknown"
+        }
+      ]
+    },
+    {
+      "semester": "2025-2nd",
+      "year": 2025,
+      "works": [
+        {
+          "studentName": "Student Name unknown",
+          "title": "unknown",
+          "image": "past-works/2025-2nd/68-2-work1.png",
+          "description": "unknown"
+        },
+        {
+          "studentName": "Student Name unknown",
+          "title": "unknown",
+          "image": "past-works/2025-2nd/68-2-work2.png",
+          "description": "unknown"
+        },
+        {
+          "studentName": "Student Name unknown",
+          "title": "unknown",
+          "image": "past-works/2025-2nd/68-2-work3.png",
+          "description": "unknown"
+        },
+        {
+          "studentName": "Student Name unknown",
+          "title": "unknown",
+          "image": "past-works/2025-2nd/68-2-work4.png",
+          "description": "unknown"
+        }
+      ]
+    }
+
+  ]
+}
